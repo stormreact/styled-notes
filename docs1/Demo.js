@@ -96,8 +96,8 @@ const Demo = props => (
       disabled={!props.xray}>
       <Preview />
     </XRay>
-    <Bar />
     <Editor p={3} />
+    <Bar />
   </Provider>
 )
 
