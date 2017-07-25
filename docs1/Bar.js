@@ -7,11 +7,10 @@ import { toggleXRay } from './updaters'
 import colors from './colors'
 
 const Button = hoc('button').extend`
-  font-size: 12px;
+  font-size: 6px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .2em;
-  padding: 12px;
   border: 0;
   color: ${props => props.active ? colors.blue : '#fff'};
   background-color: transparent;
@@ -22,7 +21,7 @@ const Btn = Button.withComponent('a').extend`
 `
 
 const Root = styled(Flex)`
-  height: 48px;
+  height: 12px;
   align-items: center;
   background-color: #000;
 `
