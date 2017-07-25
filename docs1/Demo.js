@@ -65,7 +65,7 @@ const Preview = styled(LivePreview)`
 const Editor = styled(LiveEditor)`
   ${space}
   height: 30vh;
-  min-height: 256px;
+  min-height: 300px;
   overflow: auto;
   outline: none;
   color: ${colors.blue};
