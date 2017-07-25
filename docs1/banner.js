@@ -2,7 +2,7 @@ const banner = `<Flex p={3}
   style={{ height: '100%' }}
   align='center'>
   <Box width={[ 1, '640px' ]}>
-    <Heading f={[ 6, 7, 8 ]}>
+    <Heading f={[ 1, 2, 3 ]}>
       Styled System
     </Heading>
     <Text f={4} bold>
