@@ -1,4 +1,4 @@
-
+<div>
 <Flex p={3}	style={{ height: '100%' }}	align='center'>		
 
 <Box width={[ 1, '400px' ]} mx={2}>
@@ -24,9 +24,11 @@
 <Button mx={3}> Yoh 3</Button>
 <p>Hola 2b</p>
 </Box>
+</Flex>
 
-<p> Raton </p>		
+<p></p>
 
+<Flex p={3}	style={{ height: '100%' }}	align='center'>
 <Box width={[ 1, '400px' ]} mx={2}>		
 <p>Hola 3a</p>		
 <Button mx={3} my={1}> Yoh 1</Button>
@@ -50,4 +52,6 @@
 <Button mx={3}> Yoh 3</Button>
 <p>Hola 4b</p>
 </Box>
+
 </Flex>
+</div>
