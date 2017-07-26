@@ -15,7 +15,7 @@ import {
   fontSize
 } from '../dist'
 import { hoc } from './styled-components'
-import banner from './banner1'
+import banner from './banner2'
 import { toggleXRay } from './updaters'
 import colors from './colors'
 import Bar from './Bar'
