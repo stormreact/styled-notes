@@ -1,11 +1,11 @@
 const path = require('path')
 
 module.exports = {
-  entry: './docs1/entry.js',
+  entry: './docs2/entry.js',
 
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, 'docs1')
+    path: path.join(__dirname, 'docs2')
   },
 
   module: {
@@ -19,7 +19,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: 'docs1/',
+    contentBase: 'docs2/',
     historyApiFallback: true
   }
 }
