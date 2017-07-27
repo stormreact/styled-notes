@@ -286,7 +286,7 @@ const App = props => (
 
 MIT License
 
-##### Branch notes:
+## Branch notes:
 
 Bp11 is the branch with the collapsible **Preview** and **Editor**.   
 Bp10 is the branch to start out with if you choose to do other work.
