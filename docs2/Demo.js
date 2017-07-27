@@ -19,6 +19,7 @@ import banner from './banner2'
 import { toggleXRay } from './updaters'
 import colors from './colors'
 import Bar from './Bar'
+import {Collapse} from 'react-collapse';
 
 const Button = hoc('a').extend`
   display: inline-flex;
@@ -91,6 +92,7 @@ const Demo = props => (
     code={banner}
     mountStylesheet={false}>
     <Err />
+    <Collapse isOpened={true}>
     <XRay
       color={colors.blue}
       backgroundColor={colors.dark}
@@ -98,7 +100,10 @@ const Demo = props => (
       <Preview />
     </XRay>
     <Bar />
-    <Editor p={3} />
+    </Collapse>
+    <Collapse isOpened={true}>
+      <Editor p={3} />
+    </Collapse>
   </Provider>
 )
 
