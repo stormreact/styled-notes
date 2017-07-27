@@ -16,7 +16,6 @@ import {
 } from '../dist'
 import { hoc } from './styled-components'
 import banner from './banner2'
-import { toggleXRay, togglePreview, toggleEditor } from './updaters'
 import colors from './colors'
 import Bar from './Bar'
 import {Collapse} from 'react-collapse';
