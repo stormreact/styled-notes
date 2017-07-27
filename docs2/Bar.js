@@ -47,11 +47,17 @@ const Bar = props => (
       m={0}
     />
     <MyLabel>
-	   <Checkbox defaultChecked />
+	   <Checkbox
+       onClick={e => props.update(toggleXRay)}
+       active={props.xray}
+       />
 	   Collapse Preview
     </MyLabel>
     <MyLabel>
-       <Checkbox defaultChecked />
+       <Checkbox
+       onClick={e => props.update(toggleXRay)}
+       active={props.xray}
+       />
        Collapse Editor
     </MyLabel>
     <Btn
