@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { connect } from 'funcup'
 import { Flex, Box } from 'grid-styled'
 import { hoc } from './styled-components'
-import { toggleXRay } from './updaters'
+import { toggleXRay, togglePreview, toggleEditor } from './updaters'
 import colors from './colors'
 import {Checkbox, Label} from 'rebass'
 
@@ -48,15 +48,15 @@ const Bar = props => (
     />
     <MyLabel>
 	   <Checkbox
-       onClick={e => props.update(toggleXRay)}
-       active={props.xray}
+       onClick={e => props.update(togglePreview)}
+       active={props.preview}
        />
 	   Collapse Preview
     </MyLabel>
     <MyLabel>
        <Checkbox
-       onClick={e => props.update(toggleXRay)}
-       active={props.xray}
+       onClick={e => props.update(toggleEditor)}
+       active={props.editor}
        />
        Collapse Editor
     </MyLabel>

@@ -16,7 +16,7 @@ import {
 } from '../dist'
 import { hoc } from './styled-components'
 import banner from './banner2'
-import { toggleXRay } from './updaters'
+import { toggleXRay, togglePreview, toggleEditor } from './updaters'
 import colors from './colors'
 import Bar from './Bar'
 import {Collapse} from 'react-collapse';
@@ -92,7 +92,7 @@ const Demo = props => (
     code={banner}
     mountStylesheet={false}>
     <Err />
-    <Collapse isOpened={true}>
+    <Collapse isOpened={!props.preview}>
     <XRay
       color={colors.blue}
       backgroundColor={colors.dark}
@@ -101,7 +101,7 @@ const Demo = props => (
     </XRay>
     </Collapse>
     <Bar />
-    <Collapse isOpened={true}>
+    <Collapse isOpened={!props.editor}>
       <Editor p={3} />
     </Collapse>
   </Provider>
