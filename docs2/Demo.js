@@ -99,8 +99,8 @@ const Demo = props => (
       disabled={!props.xray}>
       <Preview />
     </XRay>
-    <Bar />
     </Collapse>
+    <Bar />
     <Collapse isOpened={true}>
       <Editor p={3} />
     </Collapse>
