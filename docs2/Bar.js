@@ -5,6 +5,7 @@ import { Flex, Box } from 'grid-styled'
 import { hoc } from './styled-components'
 import { toggleXRay } from './updaters'
 import colors from './colors'
+import {Checkbox, Label} from 'rebass'
 
 const Button = hoc('button').extend`
   font-size: 12px;
@@ -26,6 +27,16 @@ const Root = styled(Flex)`
   align-items: center;
   background-color: #000;
 `
+const MyLabel = styled(Label)`
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: 12px;
+  border: 0;
+  color: ${props => props.active ? colors.blue : '#fff'};
+  background-color: transparent;
+`
 
 const Bar = props => (
   <Root>
@@ -35,6 +46,14 @@ const Bar = props => (
       children='X-Ray'
       m={0}
     />
+    <MyLabel>
+	   <Checkbox defaultChecked />
+	   Collapse Preview
+    </MyLabel>
+    <MyLabel>
+       <Checkbox defaultChecked />
+       Collapse Editor
+    </MyLabel>
     <Btn
       ml='auto'
       href='http://jxnblk.com'
